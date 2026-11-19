@@ -1,0 +1,469 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("img/fundosecao.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #020817;
+    color: #0a42a3;
+}
+
+/* Cartões das seções */
+.secao {
+    
+    /* background: rgba(49, 49, 49, 0.767);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(24, 58, 114, 0.12);
+    margin-bottom: 1.2rem; */
+
+    background:  #313131c4;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid #ffffff40;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px #183a721f;
+    margin-bottom: 1.2rem;
+}
+
+.cabecalho {
+    background-image: url("img/Banner.png");
+    width: 100%;
+    size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #F4B323;
+    text-shadow: 0 0 3px #ff891a;
+    padding: 2.5rem 0;
+    border-bottom: 4px solid #ff891a;
+}
+
+/* Cabeçalhos das seções */
+.secao .card-header {
+    background: linear-gradient(110deg, #ffa600, #ecb641);
+    border-bottom: 3px solid #ffe75d;
+    border-radius: 16px 16px 0 0;
+    padding: 1.25rem;
+}
+
+.secao .card-body {
+    padding: 1.35rem;
+}
+
+.numero {
+    display: inline-grid;
+    place-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+    background: #ffc74e;
+    color: #f0680d;
+    font-weight: 700;
+    margin-right: .65rem
+}
+
+/* Campos de preenchimento */
+.form-control,
+.form-select {
+    background-color: #383838;
+    color: #d2d4ee;
+    border: 1px solid #555555;
+}
+
+/* Texto dos campos */
+.form-control::placeholder {
+    color: #77736f;
+}
+
+/* Opções dos seletores */
+.form-select option {
+    background-color: #383838;
+    color: #ffffff;
+}
+
+/* Campos quando selecionados */
+.form-control:focus,
+.form-select:focus {
+    background-color: #424242;
+    color: #ffffff;
+    border-color: #689add;
+    box-shadow: 0 0 0 .2rem #2776ca40;
+}
+
+/* Rótulos */
+.form-label {
+    color: #eeeeee;
+    font-weight: 600;
+    font-size: .92rem
+}
+
+.obrigatorio {
+    color: #b91c1c
+}
+
+/* Textos auxiliares */
+.text-secondary,
+.small.text-secondary {
+    color: #bdbdbd !important;
+}
+
+/* Caixas informativas */
+.alert-light {
+    background-color: #303030;
+    color: #eeeeee;
+    border-color: #505050 !important;
+}
+
+.alert-info {
+    background-color: #263c50;
+    color: #dceeff;
+}
+
+.alert-primary {
+    background-color: #293b55;
+    color: #e1edff;
+}
+
+/* Textos dos checkboxes */
+.form-check-label {
+    color: #eeeeee;
+}
+
+/* Checkboxes */
+.form-check-input {
+    background-color: #383838;
+    border-color: #888888;
+}
+
+.form-check-input:checked {
+    background-color: #164b91;
+    border-color: #164b91;
+}
+
+/* Links */
+a {
+    color: #70b7ff;
+}
+
+a:hover {
+    color: #a5d3ff;
+}
+
+/* Rodapé */
+footer {
+    color: #aaaaaa;
+}
+
+/* Botão limpar */
+.btn-outline-secondary {
+    color: #dddddd;
+    border-color: #888888;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #555555;
+    color: #ffffff;
+}
+
+/* Mensagens de validação */
+.invalid-feedback {
+    color: #ff8585;
+}
+
+/* Mensagem de sucesso */
+.alert-success {
+    background-color: #21452e;
+    color: #d8f5df;
+    border-color: #367849;
+}
+
+
+/* =========================================
+   SISTEMA DE TEMAS - GALERA TECH
+========================================= */
+
+/* Transições suaves entre os temas */
+
+body,
+.secao,
+.form-control,
+.form-select,
+.alert-light,
+.alert-info,
+.alert-primary,
+.form-check-label,
+footer {
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+/* =========================================
+   MODO ESCURO
+   Preserva a aparência original
+========================================= */
+
+[data-theme="dark"] body {
+    background-color: #020817;
+    color: #e8edf7;
+}
+
+/* =========================================
+   MODO CLARO
+========================================= */
+
+[data-theme="light"] body {
+    background-image: url("img/coisa1.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #c0c8d8;
+    color: #102A56;
+}
+
+/* Cartões */
+
+[data-theme="light"] .secao {
+    background: #bfcbddab; /*rgba(204, 218, 236, 0.95);*/
+    border: 1px #000000; /* solid #D8E2F0; */
+    box-shadow: 0 4px 20px rgba(16, 42, 86, 0.08);
+}
+
+/* Campos de preenchimento */
+
+[data-theme="light"] .form-control,
+[data-theme="light"] .form-select {
+    background-color: #ffffffa9;
+    color: #24344e;
+    border-color: #cbd6e6;
+}
+
+/* Placeholder */
+
+[data-theme="light"] .form-control::placeholder {
+    color: #929eae;
+}
+
+/* Opções dos seletores */
+
+[data-theme="light"] .form-select option {
+    background-color: #ffffff;
+    color: #24344e;
+}
+
+/* Campos selecionados */
+
+[data-theme="light"] .form-control:focus,
+[data-theme="light"] .form-select:focus {
+    background-color: #ffffff;
+    color: #24344e;
+    border-color: #1769C2;
+    box-shadow: 0 0 0 .2rem rgba(23, 105, 194, 0.18);
+}
+
+/* Rótulos */
+
+[data-theme="light"] .form-label {
+    color: #102A56;
+}
+
+/* Textos auxiliares */
+
+[data-theme="light"] .text-secondary,
+[data-theme="light"] .small.text-secondary {
+    color: #68778c !important;
+}
+
+/* Caixas informativas */
+
+[data-theme="light"] .alert-light {
+    background-color: #F4F7FC;
+    color: #24344e;
+    border-color: #D8E2F0 !important;
+}
+
+[data-theme="light"] .alert-info {
+    background-color: #E5F4FC;
+    color: #17466e;
+    border-color: #b9e2f5;
+}
+
+[data-theme="light"] .alert-primary {
+    background-color: #E8F0FC;
+    color: #102A56;
+    border-color: #c5d8f3;
+}
+
+/* Checkboxes */
+
+[data-theme="light"] .form-check-label {
+    color: #34445d;
+}
+
+[data-theme="light"] .form-check-input {
+    background-color: #ffffff;
+    border-color: #aab8cb;
+}
+
+[data-theme="light"] .form-check-input:checked {
+    background-color: #1769C2;
+    border-color: #1769C2;
+}
+
+/* Links */
+
+[data-theme="light"] a {
+    color: #1769C2;
+}
+
+[data-theme="light"] a:hover {
+    color: #084c9b;
+}
+
+/* Rodapé */
+
+[data-theme="light"] footer {
+    color: #718096;
+}
+
+/* Botão limpar */
+
+[data-theme="light"] .btn-outline-secondary {
+    color: #52647d;
+    border-color: #aab8cb;
+}
+
+[data-theme="light"] .btn-outline-secondary:hover {
+    background-color: #e5edf8;
+    color: #102A56;
+}
+
+/* Mensagens de validação */
+
+[data-theme="light"] .invalid-feedback {
+    color: #b42318;
+}
+
+/* Mensagem de sucesso */
+
+[data-theme="light"] .alert-success {
+    background-color: #e2f5e8;
+    color: #24613a;
+    border-color: #9bd4aa;
+}
+
+
+/* =========================================
+   BOTÃO DE ALTERNÂNCIA DE TEMA
+   GALERA TECH - DESIGN PREMIUM
+========================================= */
+
+#theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 11px 23px;
+
+    background: linear-gradient(
+        135deg,
+        #102A56,
+        #164b91
+    );
+
+    color: #ffffff;
+
+    border: 1px solid #ffc04ba6; /*#5ca4ffa6; */
+    border-radius: 50px;
+
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.25),
+        0 0 12px rgba(23, 105, 194, 0.15);
+
+    transition: all 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+
+#theme-toggle:hover {
+    background: linear-gradient(
+        135deg,
+        #1769C2,
+        #2387e8
+    );
+
+    border-color: #F4B323;
+
+    box-shadow:
+        0 5px 20px rgba(23, 105, 194, 0.35),
+        0 0 12px rgba(244, 179, 35, 0.25);
+
+    transform: translateY(-2px);
+}
+
+/* Efeito ao clicar */
+
+#theme-toggle:active {
+    transform: scale(0.96);
+}
+
+/* Foco de acessibilidade */
+
+#theme-toggle:focus-visible {
+    outline: 3px solid #F4B323;
+    outline-offset: 4px;
+}
+
+/* =========================================
+   BOTÃO NO MODO CLARO
+========================================= */
+
+[data-theme="light"] #theme-toggle {
+    background: linear-gradient(
+        135deg,
+        #ffffff,
+        #e8f0fc
+    );
+
+    color: #4a8cff;
+
+    border: 1px solid #102A56; /*#c4d6ed;*/
+
+    box-shadow:
+        0 4px 14px rgba(16, 42, 86, 0.10),
+        0 0 8px rgba(23, 105, 194, 0.08);
+}
+
+/* Hover no modo claro */
+
+[data-theme="light"] #theme-toggle:hover {
+    background: linear-gradient(
+        135deg,
+        #e5f0ff,
+        #d5e7ff
+    );
+
+    border-color: #F4B323;
+
+    box-shadow:
+        0 5px 18px rgba(23, 105, 194, 0.18),
+        0 0 10px rgba(244, 179, 35, 0.20);
+}

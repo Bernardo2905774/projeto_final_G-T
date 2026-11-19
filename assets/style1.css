@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("img/fundosecao.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #020817;
+    color: #0a42a3;
+}
+
+/* Cartões das seções */
+.secao {
+    background: rgba(49, 49, 49, 0.767);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(24, 58, 114, 0.12);
+    margin-bottom: 1.2rem;
+}
+
+.cabecalho {
+    background-image: url("img/Banner.png");
+    width: 100%;
+    size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #F4B323;
+    text-shadow: 0 0 3px #ff891a;
+    padding: 2.5rem 0;
+    border-bottom: 4px solid #ff891a;
+}
+
+/* Cabeçalhos das seções */
+.secao .card-header {
+    background: linear-gradient(110deg, #ffa600, #ecb641);
+    border-bottom: 3px solid #ffe75d;
+    border-radius: 16px 16px 0 0;
+    padding: 1.25rem;
+}
+
+.secao .card-body {
+    padding: 1.35rem;
+}
+
+.numero {
+    display: inline-grid;
+    place-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+    background: #ffc74e;
+    color: #f0680d;
+    font-weight: 700;
+    margin-right: .65rem
+}
+
+/* Campos de preenchimento */
+.form-control,
+.form-select {
+    background-color: #383838;
+    color: #d2d4ee;
+    border: 1px solid #555555;
+}
+
+/* Texto dos campos */
+.form-control::placeholder {
+    color: #77736f;
+}
+
+/* Opções dos seletores */
+.form-select option {
+    background-color: #383838;
+    color: #ffffff;
+}
+
+/* Campos quando selecionados */
+.form-control:focus,
+.form-select:focus {
+    background-color: #424242;
+    color: #ffffff;
+    border-color: #689add;
+    box-shadow: 0 0 0 .2rem #2776ca40;
+}
+
+/* Rótulos */
+.form-label {
+    color: #eeeeee;
+    font-weight: 600;
+    font-size: .92rem
+}
+
+.obrigatorio {
+    color: #b91c1c
+}
+
+/* Textos auxiliares */
+.text-secondary,
+.small.text-secondary {
+    color: #bdbdbd !important;
+}
+
+/* Caixas informativas */
+.alert-light {
+    background-color: #303030;
+    color: #eeeeee;
+    border-color: #505050 !important;
+}
+
+.alert-info {
+    background-color: #263c50;
+    color: #dceeff;
+}
+
+.alert-primary {
+    background-color: #293b55;
+    color: #e1edff;
+}
+
+/* Textos dos checkboxes */
+.form-check-label {
+    color: #eeeeee;
+}
+
+/* Checkboxes */
+.form-check-input {
+    background-color: #383838;
+    border-color: #888888;
+}
+
+.form-check-input:checked {
+    background-color: #164b91;
+    border-color: #164b91;
+}
+
+/* Links */
+a {
+    color: #70b7ff;
+}
+
+a:hover {
+    color: #a5d3ff;
+}
+
+/* Rodapé */
+footer {
+    color: #aaaaaa;
+}
+
+/* Botão limpar */
+.btn-outline-secondary {
+    color: #dddddd;
+    border-color: #888888;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #555555;
+    color: #ffffff;
+}
+
+/* Mensagens de validação */
+.invalid-feedback {
+    color: #ff8585;
+}
+
+/* Mensagem de sucesso */
+.alert-success {
+    background-color: #21452e;
+    color: #d8f5df;
+    border-color: #367849;
+}
